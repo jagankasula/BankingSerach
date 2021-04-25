@@ -1,0 +1,13 @@
+# Default ignored files
+/.idea/workspace.xml
+.DS_Store
+.project
+*.iml
+/.vscode
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+logs
+target

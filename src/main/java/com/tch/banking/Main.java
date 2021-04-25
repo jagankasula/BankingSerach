@@ -4,7 +4,6 @@ import com.opencsv.bean.CsvToBeanBuilder;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.Formatter;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.Scanner;
