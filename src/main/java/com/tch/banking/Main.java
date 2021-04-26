@@ -11,7 +11,8 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
         Scanner input = new Scanner(System.in);
-        String fileName = "src/main/resources/ProgrammingAssignment.csv";
+        System.out.println("Enter CSV file path:  ");
+        String fileName = input.nextLine();
 
         List<Employee> employees = new CsvToBeanBuilder(new FileReader(fileName))
                 .withType(Employee.class)
@@ -28,7 +29,8 @@ public class Main {
                 "  5 for BANK NAME \n" +
                 "  6 for  CITY & STATE \n \n");
 
-        int choice = Integer.parseInt(input.nextLine());
+        String number = input.nextLine();
+        int choice  = Integer.parseInt(number);
 
         switch (choice) {
             case 1 :
